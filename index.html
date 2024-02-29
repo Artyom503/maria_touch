@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Maria</title>
+  <link rel="shortcut icon" href="strawbery.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/theme-styles.min.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="carousel.css">
+  <style>
+    @keyframes hideLoader {
+      0% {
+        width: 100%;
+        height: 100%;
+      }
+
+      100% {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    body>div.loader {
+      position: fixed;
+      background: white;
+      width: 100%;
+      height: 100%;
+      z-index: 1071;
+      opacity: 0;
+      transition: opacity .5s ease;
+      overflow: hidden;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body:not(.loaded)>div.loader {
+      opacity: 1;
+    }
+
+    body:not(.loaded) {
+      overflow: hidden;
+    }
+
+    body.loaded>div.loader {
+      animation: hideLoader .5s linear .5s forwards;
+    }
+
+    /* Typing Animation */
+    .loading-animation {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      animation: typing 1s linear infinite alternate;
+      position: relative;
+      left: -12px;
+    }
+
+    @keyframes typing {
+      0% {
+        background-color: rgba(100, 100, 100, 1);
+        box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2),
+          24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+      }
+
+      25% {
+        background-color: rgba(100, 100, 100, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 2),
+          24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+      }
+
+      75% {
+        background-color: rgba(100, 100, 100, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2),
+          24px 0px 0px 0px rgba(100, 100, 100, 1);
+      }
+    }
+  </style>
+ <!-- Facebook Pixel Code -->
+ <script>
+  ! function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '<?=$_REQUEST[',pixel,']?>');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=<?=$_REQUEST['pixel']?>&ev=Lead&noscript=1" /></noscript>
+
+<!-- End Facebook Pixel Code --> 
+</head>
+
+<body class="loaded">
+  <div class="loader">
+    <div class="loading-animation"></div>
+  </div>
+  <div class="navbar-container ">
+    <nav class="navbar navbar-expand-lg navbar-dark" data-overlay="" data-sticky="top">
+      <div class="container">
+        <a class="navbar-brand fade-page" href="/" style="margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);">
+          Maria 19 y.o.
+        </a>
+        
+        <div class="collapse navbar-collapse justify-content-end">
+         
+        </div>
+      </div>
+    </nav>
+  </div>
+  <section class="bg-dark text-light header-inner p-0 jarallax o-hidden" data-overlay="" data-speed="0.4" style="height: 27rem;">
+    <img src="./maria/bg5.jpg" alt="Maria" class="jarallax-img opacity-30">
+    
+    <div class="container py-0 layer-2">
+      <div class="row my-4 my-md-6">
+        <div class="col-lg-9 col-xl-8">
+          
+          <p>
+          <h1 class="display-4">
+            </h1>
+          </p>
+          <p class="lead mb-0">
+           </p>
+          <br >
+          
+        </div>
+      </div>
+    </div>
+    <div class="decoration-wrapper">
+      <a href="https://onlyfans.com/mila_cutie" class="btn btn-primary" style="margin: 0;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);" onclick="fbq('track', 'Lead')">
+            Onlyfans 🍓
+          </a>
+
+    </div>
+    <div class="divider">
+      
+      
+      
+      
+      
+      <!--<img src="images/divider-3.svg" alt="graphical divider" data-inject-svg="">-->
+    </div>
+  </section>
+  
+  <section style="padding: 1rem; margin: 0 auto; width: 100%; background-image: linear-gradient(to right, rgb(248, 143, 143),  rgba(241, 123, 123, 0));">
+    <link href="slide.css" rel="stylesheet" type="text/css" media="all">
+    <div class="slider">
+      <div class="slider-list">
+        <div class="slider-track">
+          <img class="slide" src="maria/1.jpg"></img>
+          <img class="slide" src="maria/2.jpg"></img>
+          <img class="slide" src="maria/3.jpg"></img>
+          <img class="slide" src="maria/4.jpg"></img>
+          <img class="slide" src="maria/5.jpg"></img>
+          <img class="slide" src="maria/6.jpg"></img>
+        </div>
+      </div>
+      <div class="slider-arrows">
+        <button type="button" class="prev">&larr;</button>
+        <button type="button" class="next">&rarr;</button>
+      </div>
+    </div>
+    <script src="slide.js"></script>
+</section>
+
+  </section>
+ 
+  <footer class="pb-5 bg-primary-3 text-light" id="footer">
+    
+    <div class="container">
+      
+      <div class="row mb-4">
+        <div class="col">
+          <div>
+            <a href="https://onlyfans.com/mila_cutie" class="btn btn-primary" style="margin: 0;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);" onclick="fbq('track', 'Lead')">
+                  More hot content 🍓
+                </a>
+      
+          </div>
+
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        
+        <div class="col-xl-10">
+          <small class="text-muted">©<span id="year"></span> • All rights
+            reserved • 
+          </small>
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+</body>
+
+</html>
